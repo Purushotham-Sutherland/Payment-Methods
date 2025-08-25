@@ -62,15 +62,15 @@
 
             <td>
               <img src="Picture1.jpg" id="imageButton1" class="button-image" alt="Click to show images">
-              <img src="Picture2.jpg" id="imageButton2" class="button-image" alt="Click to show images">
+              <!-- <img src="Picture2.jpg" id="imageButton2" class="button-image" alt="Click to show images"> -->
 
             </td>
 
 
             <!-- Container for dynamically loaded images -->
-            <div id="imageContainer">
+            <div id="imageContainer1">
 
-              <span id="closeButton" class="close-button">✖</span>
+              <span id="closeButton1" class="close-button">✖</span>
 
             </div>
 
@@ -81,8 +81,10 @@
               </ul>
             </td>
             <td>
+
+              <b>DE Market – Pending Account CC Verification:</b>
               <ul>
-                <li> <b>DE Market – Pending Account CC Verification:</b>
+                <li>
                   If a credit card is registered under the user's name, verify it even if the account is pending.
                 </li>
                 <li>
@@ -162,22 +164,25 @@
 
             <td>
               <img src="Picture3.png" id="imageButton3" class="button-image" alt="Click to show images">
-              <img src="Picture4.png" id="imageButton4" class="button-image" alt="Click to show images">
-              <img src="Picture5.png" id="imageButton5" class="button-image" alt="Click to show images">
+              <!-- <img src="Picture4.png" id="imageButton4" class="button-image" alt="Click to show images"> -->
+              <!-- <img src="Picture5.png" id="imageButton5" class="button-image" alt="Click to show images"> -->
             </td>
 
             <!-- Container for dynamically loaded images -->
-            <div id="imageContainer1">
+            <div id="imageContainer2">
 
-              <span id="closeButton1" class="close-button">✖</span>
+              <span id="closeButton2" class="close-button">✖</span>
 
             </div>
 
             <td>Ontario </td>
             <td>
+              <b>DE Market – Pending Account CC Verification:</b>
               <ul>
-                <li> <b>DE Market – Pending Account CC Verification:</b>
+                <li>
                   If a credit card is registered under the user's name, verify it even if the account is pending.
+                </li>
+                <li>
                   This avoids delays, as Sofort/IDNow rarely trigger alerts for CC verification—except manual IDNow
                   cases.
                 </li>
@@ -205,8 +210,8 @@
             </td>
             <td>
               <img src="Picture6.png" id="imageButton6" class="button-image" alt="Click to show images">
-              <img src="Picture7.jpg" id="imageButton7" class="button-image" alt="Click to show images">
-              <img src="Picture8.png" id="imageButton8" class="button-image" alt="Click to show images">
+              <!-- <img src="Picture7.jpg" id="imageButton7" class="button-image" alt="Click to show images"> -->
+              <!-- <img src="Picture8.png" id="imageButton8" class="button-image" alt="Click to show images"> -->
             </td>
             <td>Denmark</td>
 
@@ -960,25 +965,26 @@
                 <li>
                   Users must complete Paysafe's verification process. Wallet Screenshot – URL Requirement
                 </li>
-                </ul>
-                <b>Wallet Screenshot URL Requirement:</b> <br>
+              </ul>
+              <b>Wallet Screenshot URL Requirement:</b> <br>
 
-                <ul>
-                  <li>
-                    <b>RISK Request:</b> URL must be visible. <br>
+              <ul>
+                <li>
+                  <b>RISK Request:</b> URL must be visible. <br>
 
-                  </li>
-                  <li>
-                    <b>WI Request <i>(RISK did not request SS):</i> </b> URL visibility not mandatory.
+                </li>
+                <li>
+                  <b>WI Request <i>(RISK did not request SS):</i> </b> URL visibility not mandatory.
 
-                  </li>
-                </ul>
+                </li>
+              </ul>
 
-                <p>
-                  <b><mark style="background: orange;">Note:</mark></b> <i>PSW wallets must be verified to avoid 3rd party deposits, money laundering etc. </i>
-                </p>
+              <p>
+                <b><mark style="background: orange;">Note:</mark></b> <i>PSW wallets must be verified to avoid 3rd party
+                  deposits, money laundering etc. </i>
+              </p>
 
-        
+
             </td>
           </tr>
         </tbody>
@@ -1045,19 +1051,19 @@
                 Denmark
               </td>
               <td>
-               
-              <b>Wallet Screenshot URL Requirement:</b> <br>
 
-              <ul>
-                <li>
-                  <b>RISK Request:</b> URL must be visible. <br>
+                <b>Wallet Screenshot URL Requirement:</b> <br>
 
-                </li>
-                <li>
-                  <b>WI Request <i>(RISK did not request SS):</i> </b> URL visibility not mandatory.
+                <ul>
+                  <li>
+                    <b>RISK Request:</b> URL must be visible. <br>
 
-                </li>
-              </ul>
+                  </li>
+                  <li>
+                    <b>WI Request <i>(RISK did not request SS):</i> </b> URL visibility not mandatory.
+
+                  </li>
+                </ul>
 
 
 
@@ -1075,47 +1081,6 @@
 
 
   <script>
-
-
-    document.addEventListener("DOMContentLoaded", function () {
-      const imageButton = document.getElementById("imageButton");
-      const imageContainer = document.getElementById("imageContainer");
-      const closeButton = document.getElementById("closeButton");
-
-      const documents = [
-        { id: 1, imageUrl: "image.png" },
-        { id: 2, imageUrl: "creditcard2.jpg" },
-        // { id: 3, imageUrl: "3 Fake.png" },
-        // { id: 4, imageUrl: "4.png" },
-        // { id: 5, imageUrl: "5 fake.JPG" },
-        // { id: 6, imageUrl: "6 fake.png" },
-        // { id: 7, imageUrl: "7.jpg" },
-        // { id: 8, imageUrl: "8 fake.PNG" },
-        // { id: 9, imageUrl: "9 Fake.JPG" },
-        // { id: 10, imageUrl: "10.png" }
-      ];
-
-      imageButton.addEventListener("click", function () {
-        imageContainer.innerHTML = '<span id="closeButton" class="close-button">✖</span>';
-        imageContainer.style.display = "block";
-
-        documents.forEach(doc => {
-          const img = document.createElement("img");
-          img.src = doc.imageUrl;
-          img.alt = `Document ${doc.id}`;
-          imageContainer.appendChild(img);
-        });
-
-        // Re-bind close button after injecting content
-        document.getElementById("closeButton").addEventListener("click", function () {
-          imageContainer.style.display = "none";
-        });
-      });
-    });
-
-
-
-
 
     document.addEventListener("DOMContentLoaded", function () {
       const imageButton1 = document.getElementById("imageButton1");
