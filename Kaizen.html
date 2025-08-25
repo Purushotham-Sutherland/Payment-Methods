@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Zoom Image Table</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <p class="payment_method">Payment Methods</p>
+  <p class="overview">Overview </p>
+  <p>This article provides quick-reference guidelines for verifying payment methods. It covers essential checks,
+    required documentation, and exceptional cases across the following marketplaces.</p>
+
+
+  <details closed>
+    <summary><b>
+        <font size=4 color="8f91ff">Credit Cards</font>
+      </b></summary>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>What to check</th>
+            <th>What to document</th>
+            <th>Example</th>
+            <th>Market</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p><b>For One Sided cards</b></p>
+              <ul>
+
+                <!-- <li>All four (4) corners of the card</li> -->
+                <li>First 6 and last 4 numbers</li>
+                <li>Exp date</li>
+                <li>Name of the owner</li>
+              </ul>
+
+
+            </td>
+            <td>Last 4 no from the card and f (front) <ul>
+                <li>Ex: 1234 f</li>
+              </ul>
+            </td>
+            <!-- <td><img src="debitcard.jpg" id="imageButton" class="button-image" alt="Click to show images"></td> -->
+
+            <!-- Trigger image -->
+
+            <td>
+              <img src="debitcard.jpg" id="imageButton" class="button-image" alt="Click to show images">
+            </td>
+
+            <!-- Container for dynamically loaded images -->
+            <div id="imageContainer">
+
+              <span id="closeButton" class="close-button">✖</span>
+
+            </div>
+
+            <td>
+              <ul>
+                <li>Ontario</li>
+                <li>Denmark</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li> <b>DE Market – Pending Account CC Verification:</b>
+                  If a credit card is registered under the user's name, verify it even if the account is pending.
+                  This avoids delays, as Sofort/IDNow rarely trigger alerts for CC verification—except manual IDNow
+                  cases.
+                </li>
+              </ul>
+            </td>
+
+
+          </tr>
+
+          <tr>
+            <td>
+              <p><b>For Double Sided Cards:</b></p>
+              <ul>
+
+                <!-- <li>All four (4) corners of the card</li> -->
+                <li>First 6 and last 4 numbers</li>
+                <li>Exp date</li>
+                <li>Name of the owner</li>
+              </ul>
+
+            </td>
+
+            <td>Last 4 no from the card and f (front)<ul>
+                <li>Ex: 1234 f, 1234 b</li>
+              </ul>
+            </td>
+            <td></td>
+            <td>Denmark</td>
+            <td></td>
+
+          </tr>
+
+
+
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+
+  <details closed>
+    <summary><b>
+        <font size=4 color="8f91ff">Bank Book</font>
+      </b></summary>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>What to check</th>
+            <th>What to document</th>
+            <th>Example</th>
+            <th>Market</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <!-- <p><b>For One Sided cards</b></p> -->
+              <ul>
+
+                <!-- <li>All four (4) corners of the card</li> -->
+                <li>Transit & Account number</li>
+                <li>Name of the user</li>
+                <li>Bank Name or Logo</li>
+              </ul>
+
+
+            </td>
+            <td>Last 4 no from Account Number + Bank Name</td>
+            <!-- <td><img src="debitcard.jpg" id="imageButton" class="button-image" alt="Click to show images"></td> -->
+
+            <!-- Trigger image -->
+
+            <td>
+              <img src="debitcard.jpg" id="imageButton1" class="button-image" alt="Click to show images">
+            </td>
+
+            <!-- Container for dynamically loaded images -->
+            <div id="imageContainer1">
+
+              <span id="closeButton1" class="close-button">✖</span>
+
+            </div>
+
+            <td>Ontario </td>
+            <td>
+              <ul>
+                <li> <b>DE Market – Pending Account CC Verification:</b>
+                  If a credit card is registered under the user's name, verify it even if the account is pending.
+                  This avoids delays, as Sofort/IDNow rarely trigger alerts for CC verification—except manual IDNow
+                  cases.
+                </li>
+              </ul>
+            </td>
+
+
+          </tr>
+
+          <tr>
+            <td>
+              <p><b>IBAN</b></p>
+              <ul>
+
+                <!-- <li>All four (4) corners of the card</li> -->
+                <li>Name of the user</li>
+                <li>Bank Name, or Logo, or Swift/BIC</li>
+                <!-- <li>Name of the owner</li> -->
+              </ul>
+
+            </td>
+
+            <td>Last 4 no from IBAN + the bank <br>
+              <b>Ex:</b> if bank card 4513 Sparkasse
+            </td>
+            <td></td>
+            <td>Denmark</td>
+            <td> If the bank book belongs to a third party, name it accordingly. <br>
+              Then open the document, tick the IDN box, and enter the owner's name.
+            </td>
+
+          </tr>
+
+
+          <tr>
+            <td>
+              <p><b>One side</b></p>
+              <ul>
+
+                <!-- <li>All four (4) corners of the card</li> -->
+                <li>IBAN</li>
+                <li>Name of the user</li>
+                <li>Bank Name, or Logo, or Swift/BIC</li>
+                <!-- <li>Name of the owner</li> -->
+              </ul>
+
+            </td>
+
+            <td>Last 4 no from IBAN + the bank <br>
+              <b>Ex:</b> if bank card 4513 Sparkasse
+            </td>
+            <td></td>
+            <td>Denmark</td>
+            <td>
+              <p>For Bank Books from N26 bank:</p>
+              <ul>
+                <li>Doc type: <b>Bank Book</b></li>
+                <li>Filename: <b>N26 XXXX,</b> where <b>XXXX</b> represent the last 4 digits of the IBAN number.</li>
+              </ul>
+            </td>
+
+          </tr>
+
+
+          <tr>
+            <td>
+              <p><b>Double Sided Cards (Holder’s name and IBAN/Card digits in different sides)
+                  <br> <br>
+                </b>IBAN/ Card Digits (Only first 6 and last 4 numbers must be visible)</p>
+              <ul>
+
+                <!-- <li>All four (4) corners of the card</li> -->
+                <!-- <li>IBAN</li> -->
+                <li>Name of the user</li>
+                <li>Bank Name, or Logo, or Swift/BIC</li>
+                <!-- <li>Name of the owner</li> -->
+              </ul>
+
+            </td>
+
+            <td>Last 4 no from IBAN + the bank
+              Ex: if bank card is double sided 4513 f Sparkasse, 4513 b Sparkasse
+
+            </td>
+            <td></td>
+            <td>Denmark</td>
+            <td>
+              <p>IBAN Validation – Document Guidelines</p>
+              <ul>
+                <li>Front Side <ul>
+                    <li>Show holder’s name and full IBAN.</li>
+                    <li>Card digits must be partially or fully covered.</li>
+                    <li>Hide middle digits.</li>
+                  </ul>
+                </li>
+                <li>Back Side <ul>
+                    <li>IBAN must be fully visible.</li>
+                  </ul>
+                </li>
+              </ul>
+              <p>If both IBAN and card digits appear, accept as credit card or bank book—ensure correct doc type and
+                mask
+                required card digits.</p>
+            </td>
+
+          </tr>
+
+
+
+
+        </tbody>
+
+
+
+
+      </table>
+    </div>
+
+  </details>
+
+  <details closed>
+    <summary><b>
+        <font size=4 color="8f91ff">Bank Statement</font>
+      </b></summary>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>What to check</th>
+            <th>What to document</th>
+            <th>Example</th>
+            <th>Market</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <!-- <p><b>For One Sided cards</b></p> -->
+              <ul>
+
+                <!-- <li>All four (4) corners of the card</li> -->
+                <li>If is needed for validation of cc:</li>
+                <li>Name</li>
+                <li>Card number</li>
+                <li>Exp date (optional!)</li>
+              </ul>
+
+
+            </td>
+            <td>
+              <ul>
+                <li> If the BS serves a complementary role (e.g. replacing a worn-out card), label it as:
+                  Last 4 digits of the card + "bs"
+                  Example: 4000 bs
+                </li>
+                <li>
+                  If the bank statement acts independently, name the card as:
+                  Last 4 digits of the card + "virtual"
+                  Ex: 4000 virtual
+
+                </li>
+
+
+              </ul>
+            </td>
+            <!-- <td><img src="debitcard.jpg" id="imageButton" class="button-image" alt="Click to show images"></td> -->
+
+            <!-- Trigger image -->
+
+            <td>
+              <img src="debitcard.jpg" id="imageButton" class="button-image" alt="Click to show images">
+            </td>
+
+            <!-- Container for dynamically loaded images -->
+            <div id="imageContainer">
+
+              <span id="closeButton" class="close-button">✖</span>
+
+            </div>
+
+            <td>
+              Ontario
+            </td>
+            <td>
+              <ul>
+                <!-- <li> <b>DE Market – Pending Account CC Verification:</b>
+                If a credit card is registered under the user's name, verify it even if the account is pending.
+                This avoids delays, as Sofort/IDNow rarely trigger alerts for CC verification—except manual IDNow cases.
+              </li> -->
+              </ul>
+            </td>
+
+
+          </tr>
+
+          <tr>
+            <td>
+              <p>If needed for validation of cc:</p>
+              <ul>
+
+                <!-- <li>All four (4) corners of the card</li> -->
+                <li>Name</li>
+                <li>Card number</li>
+
+                <li>Exp date</li>
+              </ul>
+
+            </td>
+
+            <td>
+              <ul>
+                <li>For supplementary BS cards (e.g., worn-out), label as: Last 4 digits of card + bs
+                  Ex: 4000 bs (Exp. date).
+                </li>
+                <li>If a bank statement is used as a stand-alone document, the credit card can be named as: Last 4
+                  digits
+                  of the card + virtual
+                  Ex: 4000 virtual
+                </li>
+              </ul>
+            </td>
+            <td></td>
+            <td>Denmark</td>
+            <td>
+              <b>Bank Statement Use & Criteria</b>
+              <ul>
+                <li><b>Role:</b> Replaces or supports damaged card uploads.</li>
+                <li><b>Required Info: </b>
+                  <ul>
+                    <li>Cardholder name</li>
+                    <li>Expiry date
+                    </li>
+                    <li>Card digits: first 6 + last 4, first 4 + last 4, or just last 4</li>
+                  </ul>
+                  <p><b>Action: </b>If card is uploaded and BS supports it, verify and mark green.</p>
+
+                </li>
+              </ul>
+            </td>
+
+          </tr>
+
+
+
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+
+
+
+
+  <details closed>
+    <summary><b>
+        <font size=4 color="8f91ff">PayPal Account</font>
+      </b></summary>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>What to check</th>
+            <th>What to document</th>
+            <th>Example</th>
+            <th>Market</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p><b>From Settings:</b></p>
+              <ul>
+
+                <!-- <li>All four (4) corners of the card</li> -->
+                <li>Name</li>
+                <li>Email address linked with the Payer Id</li>
+
+                <li>If the Payer ID is not included on the shot, we can verify it by checking the email address.</li>
+              </ul>
+
+
+            </td>
+            <td>
+              <p>PayPal Docless Verification – Summary:</p>
+              <ul>
+                <li> No screenshots used for verification.
+                </li>
+                <li>
+                  For unverified accounts, match deposit name/surname with registered info during withdrawals.
+
+                </li>
+
+                <li>IDN PayPal funds returned to same account, PayPal option disabled.
+                </li>
+                <li>KYC uploads screenshots only if requested by RISK or PAY.
+                </li>
+              </ul>
+            </td>
+            <!-- <td><img src="debitcard.jpg" id="imageButton" class="button-image" alt="Click to show images"></td> -->
+
+            <!-- Trigger image -->
+
+            <td>
+              <img src="debitcard.jpg" id="imageButton" class="button-image" alt="Click to show images">
+            </td>
+
+            <!-- Container for dynamically loaded images -->
+            <div id="imageContainer">
+
+              <span id="closeButton" class="close-button">✖</span>
+
+            </div>
+
+            <td>
+              Ontario
+            </td>
+            <td>
+              <ul>
+                <!-- <li> <b>DE Market – Pending Account CC Verification:</b>
+                If a credit card is registered under the user's name, verify it even if the account is pending.
+                This avoids delays, as Sofort/IDNow rarely trigger alerts for CC verification—except manual IDNow cases.
+              </li> -->
+              </ul>
+            </td>
+
+
+          </tr>
+
+          <tr>
+            <td>
+              <p> <b>From Einstellungen:</b></p>
+              <ul>
+
+                <!-- <li>All four (4) corners of the card</li> -->
+                <li>Name</li>
+                <li>Händlernummer-> (Payer Id)</li>
+
+                <!-- <li>Exp date</li> -->
+              </ul>
+              Extra details shown on the PMs (email,address and mobile) enhance the document validity however they are
+              not
+              prerequisites
+
+            </td>
+
+            <td>
+              <ul>
+                <li>Payer ID on the PayPal acc
+                </li>
+                <li>Payer ID
+                </li>
+              </ul>
+            </td>
+            <td></td>
+            <td>Denmark</td>
+            <td>
+
+              Wallet Screenshot – URL Requirement <br>
+
+              <b>RISK Request:</b> URL must be visible. <br>
+
+              WI Request: URL visibility not mandatory.
+
+
+
+            </td>
+
+          </tr>
+
+
+          <tr>
+            <td>
+              <b>For Business PayPal Account</b><br><br>SS - from Geschaeftsangaben
+              <ul>
+
+                <!-- <li>All four (4) corners of the card</li> -->
+                <li>Payer ID</li>
+                <!-- <li>Händlernummer-> (Payer Id)</li> -->
+
+                <!-- <li>Exp date</li> -->
+              </ul>
+              SS - from Informationen zum Kontoinhaber
+              <ul>
+                <li>Name</li>
+                <li>Address</li>
+                <li>Email</li>
+                <li>Phone</li>
+              </ul>
+
+            </td>
+
+            <td>
+              Payer ID on the PayPal acc ep 1 <br><br>
+              Payer ID on the PayPal acc ep 2
+
+            </td>
+            <td></td>
+            <td>Denmark</td>
+            <td>
+
+              <ul>
+                <li>If a user submits a PayPal business account (identified by "businessmanage" in the URL), we accept
+                  it
+                  if the email matches their previously used PayPal. </li>
+                <li>These accounts lack a Händlernummer and differ in format.</li>
+                <li>Once received, create a Jira ticket to RISK and notify them accordingly.</li>
+              </ul>
+
+
+
+            </td>
+
+          </tr>
+
+
+
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <details closed>
+    <summary><b>
+        <font size=4 color="8f91ff">Skrill Account</font>
+      </b></summary>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>What to check</th>
+            <th>What to document</th>
+            <th>Example</th>
+            <th>Market</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <b>Need to be a SS from the Skrill acc with visible:</b>
+              <ul>
+
+                <!-- <li>All four (4) corners of the card</li> -->
+                <li>The E-mail address that it was used to deposit (Statistics) </li>
+                <li>All personal data (name, email, address, URL) from tab “Settings”</li>
+              </ul>
+
+
+            </td>
+            <td>e-mail address on the skrill acc
+              example@stoiximan.gr
+
+            </td>
+            <!-- <td><img src="debitcard.jpg" id="imageButton" class="button-image" alt="Click to show images"></td> -->
+
+            <!-- Trigger image -->
+
+            <td>
+              <img src="debitcard.jpg" id="imageButton" class="button-image" alt="Click to show images">
+            </td>
+
+            <!-- Container for dynamically loaded images -->
+            <div id="imageContainer">
+
+              <span id="closeButton" class="close-button">✖</span>
+
+            </div>
+
+            <td>
+              Denmark
+            </td>
+            <td>
+              Wallet Screenshot – URL Requirement <br><br>
+
+              RISK Request: URL must be visible.<br><br>
+
+              WI Request: URL visibility not mandatory<br><br>
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+
+  <details closed>
+    <summary><b>
+        <font size=4 color="8f91ff">Neteller Account</font>
+      </b></summary>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>What to check</th>
+            <th>What to document</th>
+            <th>Example</th>
+            <th>Market</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              SS - from Settings <br><br>
+
+              The Button pressed from right corner (Person) visible:
+
+              <ul>
+
+                <!-- <li>All four (4) corners of the card</li> -->
+                <li>Email</li>
+                <li>Personal ID</li>
+                <li>URL</li>
+                <li>All personal INFO</li>
+              </ul>
+
+
+            </td>
+            <td>example@stoiximan.gr
+
+
+
+            </td>
+            <!-- <td><img src="debitcard.jpg" id="imageButton" class="button-image" alt="Click to show images"></td> -->
+
+            <!-- Trigger image -->
+
+            <td>
+              <img src="debitcard.jpg" id="imageButton" class="button-image" alt="Click to show images">
+            </td>
+
+            <!-- Container for dynamically loaded images -->
+            <div id="imageContainer">
+
+              <span id="closeButton" class="close-button">✖</span>
+
+            </div>
+
+            <td>
+              Denmark
+            </td>
+            <td>
+              Wallet Screenshot – URL Requirement <br> <br>
+
+              RISK Request: URL must be visible.<br> <br>
+
+              WI Request: URL visibility not mandatory.<br> <br>
+
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+
+  <details closed>
+    <summary><b>
+        <font size=4 color="8f91ff">Okto Wallet</font>
+      </b></summary>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>What to check</th>
+            <th>What to document</th>
+            <th>Example</th>
+            <th>Market</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              SS - from Profile
+
+              <ul>
+
+                <!-- <li>All four (4) corners of the card</li> -->
+                <li>Full Name</li>
+                <li>E-mail Address</li>
+                <li>Mobile Phone Number</li>
+                <li>Customer ID</li>
+                <li>Doc Type: <b>OktoWallet</b></li>
+              </ul>
+
+
+            </td>
+            <td>Customer ID on Okto Wallet Account
+
+
+
+            </td>
+            <!-- <td><img src="debitcard.jpg" id="imageButton" class="button-image" alt="Click to show images"></td> -->
+
+            <!-- Trigger image -->
+
+            <td>
+              <img src="debitcard.jpg" id="imageButton" class="button-image" alt="Click to show images">
+            </td>
+
+            <!-- Container for dynamically loaded images -->
+            <div id="imageContainer">
+
+              <span id="closeButton" class="close-button">✖</span>
+
+            </div>
+
+            <td>
+              Denmark
+            </td>
+            <td>
+              Wallet Screenshot – URL Requirement <br><br>
+
+              RISK Request: URL must be visible.<br><br>
+
+              WI Request: URL visibility not mandatory.
+
+
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+
+
+
+  <details closed>
+    <summary><b>
+        <font size=4 color="8f91ff">Paysafe Wallet</font>
+      </b></summary>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>What to check</th>
+            <th>What to document</th>
+            <th>Example</th>
+            <th>Market</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              From SS:
+
+              <ul>
+
+                <!-- <li>All four (4) corners of the card</li> -->
+                <li>My details</li>
+                <li>URL of the page</li>
+                <li>User number</li>
+                <li>Name</li>
+                <li>Address</li>
+                <li>E-mail address</li>
+              </ul>
+
+
+            </td>
+            <td>ps (5054) example@stoiximan.gr
+            </td>
+            <!-- <td><img src="debitcard.jpg" id="imageButton" class="button-image" alt="Click to show images"></td> -->
+
+            <!-- Trigger image -->
+
+            <td>
+              <img src="debitcard.jpg" id="imageButton" class="button-image" alt="Click to show images">
+            </td>
+
+            <!-- Container for dynamically loaded images -->
+            <div id="imageContainer">
+
+              <span id="closeButton" class="close-button">✖</span>
+
+            </div>
+
+            <td>
+              Denmark
+            </td>
+            <td>
+              PSW wallets must be verified to avoid 3rd party deposits, money laundering etc. <br><br>
+              How to spot an unverified PSW wallet: The unverified Paysafe wallets display a pencil next to the name,
+              surname & DOB. So every time user sends us an unverified wallet, we have to reject it and request from the
+              user to complete the verification process via Paysafe.
+              <br><br>
+
+              Wallet Screenshot – URL Requirement<br><br>
+
+              RISK Request: URL must be visible.<br><br>
+
+              WI Request: URL visibility not mandatory.<br><br>
+
+
+
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+
+
+
+
+
+  <details closed>
+    <summary><b>
+        <font size=4 color="8f91ff">AirCash Wallet</font>
+      </b></summary>
+    <div class="table-container">
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>What to check</th>
+              <th>What to document</th>
+              <th>Example</th>
+              <th>Market</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+
+
+                <ul>
+
+                  <!-- <li>All four (4) corners of the card</li> -->
+                  <li>Holder’s full name</li>
+                  <li>Mobile number</li>
+
+                </ul>
+
+
+              </td>
+              <td>Mobile number on Aircash Wallet Account <br><br>
+                Ex: 491729259029
+
+              </td>
+              <!-- <td><img src="debitcard.jpg" id="imageButton" class="button-image" alt="Click to show images"></td> -->
+
+              <!-- Trigger image -->
+
+              <td>
+                <img src="debitcard.jpg" id="imageButton" class="button-image" alt="Click to show images">
+              </td>
+
+              <!-- Container for dynamically loaded images -->
+              <div id="imageContainer">
+
+                <span id="closeButton" class="close-button">✖</span>
+
+              </div>
+
+              <td>
+                Denmark
+              </td>
+              <td>
+                Wallet Screenshot – URL Requirement <br><br>
+
+                RISK Request: URL must be visible.
+
+
+                <br><br>WI Request: URL visibility not mandatory.
+
+
+
+
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </details>
+
+
+
+
+
+
+  <script>
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const imageButton = document.getElementById("imageButton");
+      const imageContainer = document.getElementById("imageContainer");
+      const closeButton = document.getElementById("closeButton");
+
+      const documents = [
+        { id: 1, imageUrl: "image.png" },
+        { id: 2, imageUrl: "creditcard2.jpg" },
+        // { id: 3, imageUrl: "3 Fake.png" },
+        // { id: 4, imageUrl: "4.png" },
+        // { id: 5, imageUrl: "5 fake.JPG" },
+        // { id: 6, imageUrl: "6 fake.png" },
+        // { id: 7, imageUrl: "7.jpg" },
+        // { id: 8, imageUrl: "8 fake.PNG" },
+        // { id: 9, imageUrl: "9 Fake.JPG" },
+        // { id: 10, imageUrl: "10.png" }
+      ];
+
+      imageButton.addEventListener("click", function () {
+        imageContainer.innerHTML = '<span id="closeButton" class="close-button">✖</span>';
+        imageContainer.style.display = "block";
+
+        documents.forEach(doc => {
+          const img = document.createElement("img");
+          img.src = doc.imageUrl;
+          img.alt = `Document ${doc.id}`;
+          imageContainer.appendChild(img);
+        });
+
+        // Re-bind close button after injecting content
+        document.getElementById("closeButton").addEventListener("click", function () {
+          imageContainer.style.display = "none";
+        });
+      });
+    });
+
+
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const imageButton1 = document.getElementById("imageButton1");
+      const imageContainer1 = document.getElementById("imageContainer1");
+      const closeButton1 = document.getElementById("closeButton1");
+
+      const documents = [
+        { id: 1, imageUrl: "bankbook1.png" },
+        { id: 2, imageUrl: "bankbook2.png" },
+        // { id: 3, imageUrl: "3 Fake.png" },
+        // { id: 4, imageUrl: "4.png" },
+        // { id: 5, imageUrl: "5 fake.JPG" },
+        // { id: 6, imageUrl: "6 fake.png" },
+        // { id: 7, imageUrl: "7.jpg" },
+        // { id: 8, imageUrl: "8 fake.PNG" },
+        // { id: 9, imageUrl: "9 Fake.JPG" },
+        // { id: 10, imageUrl: "10.png" }
+      ];
+
+      imageButton1.addEventListener("click", function () {
+        imageContainer1.innerHTML = '<span id="closeButton1" class="close-button">✖</span>';
+        imageContainer1.style.display = "block";
+
+        documents.forEach(doc => {
+          const img = document.createElement("img");
+          img.src = doc.imageUrl;
+          img.alt = `Document ${doc.id}`;
+          imageContainer1.appendChild(img);
+        });
+
+        // Re-bind close button after injecting content
+        document.getElementById("closeButton1").addEventListener("click", function () {
+          imageContainer1.style.display = "none";
+        });
+      });
+    });
+
+
+  </script>
+</body>
+
+</html>
