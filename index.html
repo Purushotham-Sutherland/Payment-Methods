@@ -61,8 +61,8 @@
             <!-- Trigger image -->
 
             <td>
-              <img src="Picture1.jpg" id="imageButton" class="button-image" alt="Click to show images">
-              <img src="Picture2.jpg" id="imageButton" class="button-image" alt="Click to show images">
+              <img src="Picture1.jpg" id="imageButton1" class="button-image" alt="Click to show images">
+              <img src="Picture2.jpg" id="imageButton2" class="button-image" alt="Click to show images">
 
             </td>
 
@@ -84,6 +84,8 @@
               <ul>
                 <li> <b>DE Market – Pending Account CC Verification:</b>
                   If a credit card is registered under the user's name, verify it even if the account is pending.
+                </li>
+                <li>
                   This avoids delays, as Sofort/IDNow rarely trigger alerts for CC verification—except manual IDNow
                   cases.
                 </li>
@@ -159,9 +161,9 @@
             <!-- Trigger image -->
 
             <td>
-              <img src="Picture3.png" id="imageButton1" class="button-image" alt="Click to show images">
-              <img src="Picture4.png" id="imageButton1" class="button-image" alt="Click to show images">
-              <img src="Picture5.png" id="imageButton1" class="button-image" alt="Click to show images">
+              <img src="Picture3.png" id="imageButton3" class="button-image" alt="Click to show images">
+              <img src="Picture4.png" id="imageButton4" class="button-image" alt="Click to show images">
+              <img src="Picture5.png" id="imageButton5" class="button-image" alt="Click to show images">
             </td>
 
             <!-- Container for dynamically loaded images -->
@@ -202,13 +204,24 @@
               <b>Ex:</b> if bank card 4513 Sparkasse
             </td>
             <td>
-              <img src="Picture6.png" id="imageButton" class="button-image" alt="Click to show images">
-              <img src="Picture7.jpg" id="imageButton" class="button-image" alt="Click to show images">
-              <img src="Picture8.png" id="imageButton" class="button-image" alt="Click to show images">
+              <img src="Picture6.png" id="imageButton6" class="button-image" alt="Click to show images">
+              <img src="Picture7.jpg" id="imageButton7" class="button-image" alt="Click to show images">
+              <img src="Picture8.png" id="imageButton8" class="button-image" alt="Click to show images">
             </td>
             <td>Denmark</td>
-            <td> If the bank book belongs to a third party, name it accordingly. <br>
-              Then open the document, tick the IDN box, and enter the owner's name.
+
+            <td>
+              <heading style="color: orange;font-style: italic;">Exceptions</heading> <br>
+              <ol>
+                <li>
+                  If the bank book belongs to a third party, name it accordingly.
+
+                </li>
+                <li>
+                  Open the document, tick the IDN box, and enter the owner's name.
+
+                </li>
+              </ol>
             </td>
 
           </tr>
@@ -232,9 +245,9 @@
               <b>Ex:</b> if bank card 4513 Sparkasse
             </td>
             <td>
-              <img src="Picture9.jpg" id="imageButton" class="button-image" alt="Click to show images">
-              <img src="Picture10.jpg" id="imageButton" class="button-image" alt="Click to show images">
-              <img src="Picture11.png" id="imageButton" class="button-image" alt="Click to show images">
+              <img src="Picture9.jpg" id="imageButton9" class="button-image" alt="Click to show images">
+              <img src="Picture10.jpg" id="imageButton10" class="button-image" alt="Click to show images">
+              <img src="Picture11.png" id="imageButton11" class="button-image" alt="Click to show images">
             </td>
             <td>Denmark</td>
             <td>
@@ -275,21 +288,28 @@
             <td>Denmark</td>
             <td>
               <p>IBAN Validation – Document Guidelines</p>
+              <b>Front Side </b>
               <ul>
-                <li>Front Side <ul>
-                    <li>Show holder’s name and full IBAN.</li>
-                    <li>Card digits must be partially or fully covered.</li>
-                    <li>Hide middle digits.</li>
-                  </ul>
-                </li>
-                <li>Back Side <ul>
-                    <li>IBAN must be fully visible.</li>
-                  </ul>
-                </li>
+                <li>Show holder’s name and full IBAN.</li>
+                <li>Card digits must be partially or fully covered.</li>
+                <li>Hide middle digits.</li>
               </ul>
-              <p>If both IBAN and card digits appear, accept as credit card or bank book—ensure correct doc type and
-                mask
-                required card digits.</p>
+
+              <b>Back Side </b>
+              <ul>
+                <li>IBAN must be fully visible.</li>
+              </ul>
+
+              <p>
+                <b>
+                  <mark style="background-color: orange;">Note:</mark>
+
+                </b>
+
+                <i>If both IBAN and card digits appear, accept as credit card or bank book—ensure correct doc type and
+                  mask
+                  required card digits.</i>
+              </p>
             </td>
 
           </tr>
@@ -326,10 +346,11 @@
           <tr>
             <td>
               <!-- <p><b>For One Sided cards</b></p> -->
+              <b>If is needed for validation of cc:</b>
+
               <ul>
 
                 <!-- <li>All four (4) corners of the card</li> -->
-                <li>If is needed for validation of cc:</li>
                 <li>Name</li>
                 <li>Card number</li>
                 <li>Exp date (optional!)</li>
@@ -339,13 +360,14 @@
             </td>
             <td>
               <ul>
-                <li> If the BS serves a complementary role (e.g. replacing a worn-out card), label it as:
+                <li> If the BS serves a complementary role (e.g. replacing a worn-out card), <b>label it as:</b>
                   Last 4 digits of the card + "bs"
-                  Example: 4000 bs
+                  <b>Ex:</b> 4000 bs
                 </li>
                 <li>
                   If the bank statement acts independently, name the card as:
                   Last 4 digits of the card + "virtual"
+                  <br>
                   <b>Ex:</b> 4000 virtual
 
                 </li>
@@ -418,19 +440,17 @@
             <td>Denmark</td>
             <td>
               <b>Bank Statement Use & Criteria</b>
+              <br><br>
+              <b>Role:</b> Replaces or supports damaged card uploads. <br><br>
+              <b>Required Info: </b>
               <ul>
-                <li><b>Role:</b> Replaces or supports damaged card uploads.</li>
-                <li><b>Required Info: </b>
-                  <ul>
-                    <li>Cardholder name</li>
-                    <li>Expiry date
-                    </li>
-                    <li>Card digits: first 6 + last 4, first 4 + last 4, or just last 4</li>
-                  </ul>
-                  <p><b>Action: </b>If card is uploaded and BS supports it, verify and mark green.</p>
-
+                <li>Cardholder name</li>
+                <li>Expiry date
                 </li>
+                <li>Card digits: first 6 + last 4, first 4 + last 4, or just last 4</li>
               </ul>
+              <p><b>Action: </b>If card is uploaded and BS supports it, verify and mark green.</p>
+
             </td>
 
           </tr>
@@ -483,7 +503,7 @@
                 <li> No screenshots used for verification.
                 </li>
                 <li>
-                  For unverified accounts, match deposit name/surname with registered info during withdrawals.
+                  For <b>unverified</b> accounts, match deposit name/surname with registered info during withdrawals.
 
                 </li>
 
@@ -537,9 +557,7 @@
 
                 <!-- <li>Exp date</li> -->
               </ul>
-              Extra details shown on the PMs (email,address and mobile) enhance the document validity however they are
-              not
-              prerequisites
+              PMs’ contact details (email, address, mobile) enhance the document validity but are not prerequisites
 
             </td>
 
@@ -561,13 +579,18 @@
             <td>Denmark</td>
             <td>
 
-              Wallet Screenshot – URL Requirement <br>
+              <b>Wallet Screenshot URL Requirement:</b> <br>
 
-              <b>RISK Request:</b> URL must be visible. <br>
+              <ul>
+                <li>
+                  <b>RISK Request:</b> URL must be visible. <br>
 
-              WI Request: URL visibility not mandatory.
+                </li>
+                <li>
+                  <b>WI Request <i>(RISK did not request SS):</i> </b> URL visibility not mandatory.
 
-
+                </li>
+              </ul>
 
             </td>
 
@@ -651,18 +674,21 @@
         <tbody>
           <tr>
             <td>
-              <b>Need to be a SS from the Skrill acc with visible:</b>
+              <b>From the skrill account SS:</b>
               <ul>
 
                 <!-- <li>All four (4) corners of the card</li> -->
                 <li>The E-mail address that it was used to deposit (Statistics) </li>
-                <li>All personal data (name, email, address, URL) from tab “Settings”</li>
+                <li>All personal data (name, email, address, URL) from tab 'Settings'</li>
               </ul>
 
 
             </td>
             <td>e-mail address on the skrill acc
-              example@stoiximan.gr
+              <br>
+              <b>Ex:</b> example@stoiximan.gr
+
+
 
             </td>
             <!-- <td><img src="debitcard.jpg" id="imageButton" class="button-image" alt="Click to show images"></td> -->
@@ -684,11 +710,19 @@
               Denmark
             </td>
             <td>
-              Wallet Screenshot – URL Requirement <br><br>
 
-              RISK Request: URL must be visible.<br><br>
+              <b>Wallet Screenshot URL Requirement:</b> <br>
 
-              WI Request: URL visibility not mandatory<br><br>
+              <ul>
+                <li>
+                  <b>RISK Request:</b> URL must be visible. <br>
+
+                </li>
+                <li>
+                  <b>WI Request <i>(RISK did not request SS):</i> </b> URL visibility not mandatory.
+
+                </li>
+              </ul>
 
             </td>
           </tr>
@@ -716,7 +750,7 @@
         <tbody>
           <tr>
             <td>
-              SS - from Settings <br><br>
+              <b> SS - from Settings</b> <br><br>
 
               The Button pressed from right corner (Person) visible:
 
@@ -731,7 +765,10 @@
 
 
             </td>
-            <td>example@stoiximan.gr
+            <td>
+
+              <b>Ex:</b>
+              example@stoiximan.gr
 
 
 
@@ -755,12 +792,19 @@
               Denmark
             </td>
             <td>
-              Wallet Screenshot – URL Requirement <br> <br>
 
-              RISK Request: URL must be visible.<br> <br>
+              <b>Wallet Screenshot URL Requirement:</b> <br>
 
-              WI Request: URL visibility not mandatory.<br> <br>
+              <ul>
+                <li>
+                  <b>RISK Request:</b> URL must be visible. <br>
 
+                </li>
+                <li>
+                  <b>WI Request <i>(RISK did not request SS):</i> </b> URL visibility not mandatory.
+
+                </li>
+              </ul>
 
             </td>
           </tr>
@@ -788,8 +832,8 @@
         <tbody>
           <tr>
             <td>
-              SS - from Profile
-
+              <b> SS - from Profile
+              </b>
               <ul>
 
                 <!-- <li>All four (4) corners of the card</li> -->
@@ -802,7 +846,7 @@
 
 
             </td>
-            <td>Customer ID on Okto Wallet Account
+            <td> <b>Customer ID</b> on Okto Wallet Account
 
 
 
@@ -827,13 +871,19 @@
               Denmark
             </td>
             <td>
-              Wallet Screenshot – URL Requirement <br><br>
 
-              RISK Request: URL must be visible.<br><br>
+              <b>Wallet Screenshot URL Requirement:</b> <br>
 
-              WI Request: URL visibility not mandatory.
+              <ul>
+                <li>
+                  <b>RISK Request:</b> URL must be visible. <br>
 
+                </li>
+                <li>
+                  <b>WI Request <i>(RISK did not request SS):</i> </b> URL visibility not mandatory.
 
+                </li>
+              </ul>
 
             </td>
           </tr>
@@ -863,8 +913,9 @@
         <tbody>
           <tr>
             <td>
-              From SS:
-
+              <b>
+                From SS:
+              </b>
               <ul>
 
                 <!-- <li>All four (4) corners of the card</li> -->
@@ -878,7 +929,7 @@
 
 
             </td>
-            <td>ps (5054) example@stoiximan.gr
+            <td>ps (5054) <b>Ex:</b> example@stoiximan.gr
             </td>
             <!-- <td><img src="debitcard.jpg" id="imageButton" class="button-image" alt="Click to show images"></td> -->
 
@@ -900,21 +951,34 @@
               Denmark
             </td>
             <td>
-              PSW wallets must be verified to avoid 3rd party deposits, money laundering etc. <br><br>
-              How to spot an unverified PSW wallet: The unverified Paysafe wallets display a pencil next to the name,
-              surname & DOB. So every time user sends us an unverified wallet, we have to reject it and request from the
-              user to complete the verification process via Paysafe.
-              <br><br>
+              <b>Unverified PSW wallet:</b>
+              <br>
+              <ul>
+                <li>
+                  Unverified Paysafe wallets, marked by a pencil icon next to the name, surname & DOB, are rejected.
+                </li>
+                <li>
+                  Users must complete Paysafe's verification process. Wallet Screenshot – URL Requirement
+                </li>
+                </ul>
+                <b>Wallet Screenshot URL Requirement:</b> <br>
 
-              Wallet Screenshot – URL Requirement<br><br>
+                <ul>
+                  <li>
+                    <b>RISK Request:</b> URL must be visible. <br>
 
-              RISK Request: URL must be visible.<br><br>
+                  </li>
+                  <li>
+                    <b>WI Request <i>(RISK did not request SS):</i> </b> URL visibility not mandatory.
 
-              WI Request: URL visibility not mandatory.<br><br>
+                  </li>
+                </ul>
 
+                <p>
+                  <b><mark style="background: orange;">Note:</mark></b> <i>PSW wallets must be verified to avoid 3rd party deposits, money laundering etc. </i>
+                </p>
 
-
-
+        
             </td>
           </tr>
         </tbody>
@@ -958,7 +1022,7 @@
 
 
               </td>
-              <td>Mobile number on Aircash Wallet Account <br><br>
+              <td><b>Mobile number</b> on Aircash Wallet Account <br><br>
                 <b>Ex:</b> 491729259029
 
               </td>
@@ -981,13 +1045,19 @@
                 Denmark
               </td>
               <td>
-                Wallet Screenshot – URL Requirement <br><br>
+               
+              <b>Wallet Screenshot URL Requirement:</b> <br>
 
-                RISK Request: URL must be visible.
+              <ul>
+                <li>
+                  <b>RISK Request:</b> URL must be visible. <br>
 
+                </li>
+                <li>
+                  <b>WI Request <i>(RISK did not request SS):</i> </b> URL visibility not mandatory.
 
-                <br><br>WI Request: URL visibility not mandatory.
-
+                </li>
+              </ul>
 
 
 
@@ -1053,8 +1123,8 @@
       const closeButton1 = document.getElementById("closeButton1");
 
       const documents = [
-        { id: 1, imageUrl: "bankbook1.png" },
-        { id: 2, imageUrl: "bankbook2.png" },
+        { id: 1, imageUrl: "Picture1.jpg" },
+        { id: 2, imageUrl: "Picture2.jpg" },
         // { id: 3, imageUrl: "3 Fake.png" },
         // { id: 4, imageUrl: "4.png" },
         // { id: 5, imageUrl: "5 fake.JPG" },
