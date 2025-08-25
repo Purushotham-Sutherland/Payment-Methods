@@ -47,21 +47,21 @@ img:hover {
 
 /* normal format */
 
-.payment_method{
+.payment_method {
   font-family: Arial, sans-serif;
   font-size: 30px;
   text-align: center;
   font-weight: 600;
 }
 
-.overview{
+.overview {
   font-family: Arial, sans-serif;
   font-size: 20px;
   font-weight: 600;
 }
 
 body {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: #f0f0f0;
   margin: 0;
   padding: 40px;
@@ -248,17 +248,17 @@ td img:hover~body::before {
 
 .close-button:hover {
   color: #ff0000;
-  
+
   background-color: #ffffff;
-  border:1px solid #ff0000;
+  border: 1px solid #ff0000;
 
 }
 
 .close-button1:hover {
   color: #ff0000;
-  
+
   background-color: #ffffff;
-  border:1px solid #ff0000;
+  border: 1px solid #ff0000;
 
 }
 
@@ -278,4 +278,12 @@ td img:hover~body::before {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   display: block;
+}
+
+/* Market Place */
+p span {
+  color: orange;
+  font-weight: 1000;
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
