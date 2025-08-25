@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Zoom Image Table</title>
+  <title>Payment-Methods</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -53,6 +53,7 @@
 
             </td>
             <td>Last 4 no from the card and f (front) <ul>
+              <br>
                 <li><b>Ex:</b> 1234 f</li>
               </ul>
             </td>
@@ -111,6 +112,7 @@
             </td>
 
             <td>Last 4 no from the card and f (front)<ul>
+              <br>
                 <li><b> Ex:</b> 1234 f, 1234 b</li>
               </ul>
             </td>
@@ -127,7 +129,7 @@
     </div>
   </details>
 
-
+  <!------------------------------------------------------------------------------- Bank Book-------------------------------------------------------------------------------------------------------------------------o -->
   <details closed>
     <summary><b>
         <font size=5 color="8f91ff">Bank Book</font>
@@ -163,7 +165,7 @@
             <!-- Trigger image -->
 
             <td>
-              <img src="Picture3.png" id="imageButton3" class="button-image" alt="Click to show images">
+              <img src="Picture3.png" id="imageButton2" class="button-image" alt="Click to show images">
               <!-- <img src="Picture4.png" id="imageButton4" class="button-image" alt="Click to show images"> -->
               <!-- <img src="Picture5.png" id="imageButton5" class="button-image" alt="Click to show images"> -->
             </td>
@@ -209,14 +211,21 @@
               <b>Ex:</b> if bank card 4513 Sparkasse
             </td>
             <td>
-              <img src="Picture6.png" id="imageButton6" class="button-image" alt="Click to show images">
+              <img src="Picture6.png" id="imageButton3" class="button-image" alt="Click to show images">
               <!-- <img src="Picture7.jpg" id="imageButton7" class="button-image" alt="Click to show images"> -->
               <!-- <img src="Picture8.png" id="imageButton8" class="button-image" alt="Click to show images"> -->
             </td>
+
+            <!-- Container for dynamically loaded images -->
+            <div id="imageContainer3">
+
+              <span id="closeButton3" class="close-button">✖</span>
+
+            </div>
             <td>Denmark</td>
 
             <td>
-              <heading style="color: orange;font-style: italic;">Exceptions</heading> <br>
+              <heading style="color: orange;font-style: italic;font-weight: bold;">Exceptions</heading> <br>
               <ol>
                 <li>
                   If the bank book belongs to a third party, name it accordingly.
@@ -250,10 +259,19 @@
               <b>Ex:</b> if bank card 4513 Sparkasse
             </td>
             <td>
-              <img src="Picture9.jpg" id="imageButton9" class="button-image" alt="Click to show images">
-              <img src="Picture10.jpg" id="imageButton10" class="button-image" alt="Click to show images">
-              <img src="Picture11.png" id="imageButton11" class="button-image" alt="Click to show images">
+              <img src="Picture9.jpg" id="imageButton4" class="button-image" alt="Click to show images">
+              <!-- <img src="Picture10.jpg" id="imageButton10" class="button-image" alt="Click to show images">
+              <img src="Picture11.png" id="imageButton11" class="button-image" alt="Click to show images"> -->
             </td>
+
+
+            <!-- Container for dynamically loaded images -->
+            <div id="imageContainer4">
+
+              <span id="closeButton4" class="close-button">✖</span>
+
+            </div>
+
             <td>Denmark</td>
             <td>
               <p>For Bank Books from N26 bank:</p>
@@ -282,14 +300,20 @@
 
             </td>
 
-            <td>Last 4 no from IBAN + the bank
+            <td>Last 4 no from IBAN + the bank <br>
               <b>Ex:</b> if bank card is double sided 4513 f Sparkasse, 4513 b Sparkasse
 
             </td>
             <td>
-              <img src="Picture12.jpg" id="imageButton" class="button-image" alt="Click to show images">
-              <img src="Picture13.png" id="imageButton" class="button-image" alt="Click to show images">
+              <img src="Picture12.jpg" id="imageButton5" class="button-image" alt="Click to show images">
+              <!-- <img src="Picture13.png" id="imageButton" class="button-image" alt="Click to show images"> -->
             </td>
+            <!-- Container for dynamically loaded images -->
+            <div id="imageContainer5">
+
+              <span id="closeButton5" class="close-button">✖</span>
+
+            </div>
             <td>Denmark</td>
             <td>
               <p>IBAN Validation – Document Guidelines</p>
@@ -306,10 +330,10 @@
               </ul>
 
               <p>
-                <b>
+                <!-- <b>
                   <mark style="background-color: orange;">Note:</mark>
 
-                </b>
+                </b> -->
 
                 <i>If both IBAN and card digits appear, accept as credit card or bank book—ensure correct doc type and
                   mask
@@ -331,6 +355,7 @@
     </div>
 
   </details>
+  <!------------------------------------------------------------------------------- Bank Statement-------------------------------------------------------------------------------------------------------------------------o -->
 
   <details closed>
     <summary><b>
@@ -366,7 +391,7 @@
             <td>
               <ul>
                 <li> If the BS serves a complementary role (e.g. replacing a worn-out card), <b>label it as:</b>
-                  Last 4 digits of the card + "bs"
+                  Last 4 digits of the card + "bs" <br>
                   <b>Ex:</b> 4000 bs
                 </li>
                 <li>
@@ -385,14 +410,14 @@
             <!-- Trigger image -->
 
             <td>
-              <img src="Picture14.png" id="imageButton" class="button-image" alt="Click to show images">
-              <img src="Picture15.png" id="imageButton" class="button-image" alt="Click to show images">
+              <img src="Picture14.png" id="imageButton6" class="button-image" alt="Click to show images">
+              <!-- <img src="Picture15.png" id="imageButton" class="button-image" alt="Click to show images"> -->
             </td>
 
             <!-- Container for dynamically loaded images -->
-            <div id="imageContainer">
+            <div id="imageContainer6">
 
-              <span id="closeButton" class="close-button">✖</span>
+              <span id="closeButton6" class="close-button">✖</span>
 
             </div>
 
@@ -432,16 +457,24 @@
                 </li>
                 <li>If a bank statement is used as a stand-alone document, the credit card can be named as: Last 4
                   digits
-                  of the card + virtual
+                  of the card + virtual <br>
                   <b>Ex:</b> 4000 virtual
                 </li>
               </ul>
             </td>
             <td>
-              <img src="From Settings Picture.png" id="imageButton" class="button-image" alt="Click to show images">
+              <img src="From Settings Picture.png" id="imageButton7" class="button-image" alt="Click to show images">
 
-              <img src="Picture16.png" id="imageButton" class="button-image" alt="Click to show images">
+              <!-- <img src="Picture16.png" id="imageButton" class="button-image" alt="Click to show images"> -->
             </td>
+
+            <!-- Container for dynamically loaded images -->
+            <div id="imageContainer7">
+
+              <span id="closeButton7" class="close-button">✖</span>
+
+            </div>
+
             <td>Denmark</td>
             <td>
               <b>Bank Statement Use & Criteria</b>
@@ -477,7 +510,7 @@
       </b></summary>
 
     <div class="table-container">
-      <table>
+      <table align="center">
         <thead>
           <tr>
             <th>What to check</th>
@@ -523,17 +556,9 @@
             <!-- Trigger image -->
 
             <td>
-              <img src="From Settings Picture.png" id="imageButton" class="button-image" alt="Click to show images">
-
-              <img src="Picture16.png" id="imageButton" class="button-image" alt="Click to show images">
+              NA
             </td>
 
-            <!-- Container for dynamically loaded images -->
-            <div id="imageContainer">
-
-              <span id="closeButton" class="close-button">✖</span>
-
-            </div>
 
             <td>
               Ontario
@@ -575,12 +600,19 @@
               </ul>
             </td>
             <td>
-              <img src="Picture17.png" id="imageButton" class="button-image" alt="Click to show images">
+              <img src="Picture17.png" id="imageButton8" class="button-image" alt="Click to show images">
 
-              <img src="Picture18.png" id="imageButton" class="button-image" alt="Click to show images">
+              <!-- <img src="Picture18.png" id="imageButton" class="button-image" alt="Click to show images">
               <img src="Picture19.png" id="imageButton" class="button-image" alt="Click to show images">
-              <img src="Picture20.png" id="imageButton" class="button-image" alt="Click to show images">
+              <img src="Picture20.png" id="imageButton" class="button-image" alt="Click to show images"> -->
             </td>
+
+            <!-- Container for dynamically loaded images -->
+            <div id="imageContainer8">
+
+              <span id="closeButton8" class="close-button">✖</span>
+
+            </div>
             <td>Denmark</td>
             <td>
 
@@ -630,12 +662,18 @@
             </td>
 
             <td>
-              <img src="Picture21.png" id="imageButton" class="button-image" alt="Click to show images">
+              <img src="Picture21.png" id="imageButton9" class="button-image" alt="Click to show images">
 
-              <img src="Picture22.png" id="imageButton" class="button-image" alt="Click to show images">
+              <!-- <img src="Picture22.png" id="imageButton" class="button-image" alt="Click to show images">
               <img src="Picture23.png" id="imageButton" class="button-image" alt="Click to show images">
-              <img src="Picture24.png" id="imageButton" class="button-image" alt="Click to show images">
+              <img src="Picture24.png" id="imageButton" class="button-image" alt="Click to show images"> -->
             </td>
+            <!-- Container for dynamically loaded images -->
+            <div id="imageContainer9">
+
+              <span id="closeButton9" class="close-button">✖</span>
+
+            </div>
             <td>Denmark</td>
             <td>
 
@@ -701,13 +739,13 @@
             <!-- Trigger image -->
 
             <td>
-              <img src="Picture25.png" id="imageButton" class="button-image" alt="Click to show images">
+              <img src="Picture25.png" id="imageButton10" class="button-image" alt="Click to show images">
             </td>
 
             <!-- Container for dynamically loaded images -->
-            <div id="imageContainer">
+            <div id="imageContainer10">
 
-              <span id="closeButton" class="close-button">✖</span>
+              <span id="closeButton10" class="close-button">✖</span>
 
             </div>
 
@@ -783,13 +821,13 @@
             <!-- Trigger image -->
 
             <td>
-              <img src="Picture26.png" id="imageButton" class="button-image" alt="Click to show images">
+              <img src="Picture26.png" id="imageButton11" class="button-image" alt="Click to show images">
             </td>
 
             <!-- Container for dynamically loaded images -->
-            <div id="imageContainer">
+            <div id="imageContainer11">
 
-              <span id="closeButton" class="close-button">✖</span>
+              <span id="closeButton11" class="close-button">✖</span>
 
             </div>
 
@@ -861,14 +899,14 @@
             <!-- Trigger image -->
 
             <td>
-              <img src="Picture27.jpg" id="imageButton" class="button-image" alt="Click to show images">
-              <img src="Picture28.png" id="imageButton" class="button-image" alt="Click to show images">
+              <img src="Picture27.jpg" id="imageButton12" class="button-image" alt="Click to show images">
+              <!-- <img src="Picture28.png" id="imageButton" class="button-image" alt="Click to show images"> -->
             </td>
 
             <!-- Container for dynamically loaded images -->
-            <div id="imageContainer">
+            <div id="imageContainer12">
 
-              <span id="closeButton" class="close-button">✖</span>
+              <span id="closeButton12" class="close-button">✖</span>
 
             </div>
 
@@ -941,14 +979,14 @@
             <!-- Trigger image -->
 
             <td>
-              <img src="Picture29.png" id="imageButton" class="button-image" alt="Click to show images">
-              <img src="Picture30.png" id="imageButton" class="button-image" alt="Click to show images">
+              <img src="Picture29.png" id="imageButton13" class="button-image" alt="Click to show images">
+              <!-- <img src="Picture30.png" id="imageButton" class="button-image" alt="Click to show images"> -->
             </td>
 
             <!-- Container for dynamically loaded images -->
-            <div id="imageContainer">
+            <div id="imageContainer13">
 
-              <span id="closeButton" class="close-button">✖</span>
+              <span id="closeButton13" class="close-button">✖</span>
 
             </div>
 
@@ -980,7 +1018,7 @@
               </ul>
 
               <p>
-                <b><mark style="background: orange;">Note:</mark></b> <i>PSW wallets must be verified to avoid 3rd party
+                 <i>PSW wallets must be verified to avoid 3rd party
                   deposits, money laundering etc. </i>
               </p>
 
@@ -1037,13 +1075,13 @@
               <!-- Trigger image -->
 
               <td>
-                <img src="Picture31.png" id="imageButton" class="button-image" alt="Click to show images">
+                <img src="Picture31.png" id="imageButton14" class="button-image" alt="Click to show images">
               </td>
 
               <!-- Container for dynamically loaded images -->
-              <div id="imageContainer">
+              <div id="imageContainer14">
 
-                <span id="closeButton" class="close-button">✖</span>
+                <span id="closeButton14" class="close-button">✖</span>
 
               </div>
 
@@ -1077,49 +1115,7 @@
 
 
 
-
-
-
-  <script>
-
-    document.addEventListener("DOMContentLoaded", function () {
-      const imageButton1 = document.getElementById("imageButton1");
-      const imageContainer1 = document.getElementById("imageContainer1");
-      const closeButton1 = document.getElementById("closeButton1");
-
-      const documents = [
-        { id: 1, imageUrl: "Picture1.jpg" },
-        { id: 2, imageUrl: "Picture2.jpg" },
-        // { id: 3, imageUrl: "3 Fake.png" },
-        // { id: 4, imageUrl: "4.png" },
-        // { id: 5, imageUrl: "5 fake.JPG" },
-        // { id: 6, imageUrl: "6 fake.png" },
-        // { id: 7, imageUrl: "7.jpg" },
-        // { id: 8, imageUrl: "8 fake.PNG" },
-        // { id: 9, imageUrl: "9 Fake.JPG" },
-        // { id: 10, imageUrl: "10.png" }
-      ];
-
-      imageButton1.addEventListener("click", function () {
-        imageContainer1.innerHTML = '<span id="closeButton1" class="close-button">✖</span>';
-        imageContainer1.style.display = "block";
-
-        documents.forEach(doc => {
-          const img = document.createElement("img");
-          img.src = doc.imageUrl;
-          img.alt = `Document ${doc.id}`;
-          imageContainer1.appendChild(img);
-        });
-
-        // Re-bind close button after injecting content
-        document.getElementById("closeButton1").addEventListener("click", function () {
-          imageContainer1.style.display = "none";
-        });
-      });
-    });
-
-
-  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
